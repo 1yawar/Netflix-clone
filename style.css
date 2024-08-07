@@ -1261,7 +1261,7 @@
     
     .background-image{
         width: 100vw;
-        height: 100%;
+        height: 80%;
         transform: scale(1.2) translateY(-10px);
     }
     
