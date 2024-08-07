@@ -1,0 +1,1682 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+@media(min-width: 1280px)
+{
+    .header{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    
+    }
+    
+    
+    .background-image{
+        width: 100%;
+        transform: scale(1.25) translateY(-16%); 
+    }
+    
+    .tint{
+        width: 100%;
+        background-color: rgba(0, 0, 0 ,0.40);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+    }
+    
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .navbar .logo{
+        width: 12vmax;
+    }
+    
+    .navbar .btn{
+        display: flex;
+        align-items: center;
+        gap: 20px;  
+        
+    }
+    
+    .btn .lng-btn{
+        padding: 5px 20px 5px 10px;
+        background-color: rgba(21, 21, 21, 0.747);
+        color: white;
+        border: 0.5px solid white;
+        border-radius: 4px;
+        font-size: 16px;
+        display: flex;
+    }
+    
+    .lng-btn .lng-btn-icon{
+        margin-right: 8px;
+    }
+    
+    .lng-btn .lng-btn-icon img{
+        transform: translate(1px, 2px);
+    }
+    
+    .lng-btn .lng-btn-type{
+        margin-right: 8px;
+    }
+    
+    .login-btn{
+        padding: 7px 15px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        display: flex;
+        font-weight: bold;
+        margin-right: 25px;
+    }
+    
+    
+    
+    
+    
+    .content{
+        width: 82%;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .content .tittle{
+        font-size: 3.2vmax;
+        font-weight:bold;
+        margin-bottom: 20px;
+    }
+    
+    .content .sub-tittle{
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    
+    .content .desc{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .content-flex{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-left: 9%;
+    }
+    
+    .content-input{
+        padding: 16px 200px 16px 10px;
+        margin-right: 10px;
+        background-color: rgba(25, 24, 24, 0.718);
+        border: 0.5px solid white;
+        border-radius: 4px;
+        
+    }
+    
+    .content-input:focus{
+        outline: 2px solid white;
+    }
+    
+    .content-btn{
+        padding: 0 15px 3px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 22px;
+        font-weight: bold;   
+        display: flex;
+        align-items: center; 
+    }
+    
+    .content-btn-icon img{
+        margin-left: 2px;
+        margin-top: 8px;
+    }
+    .section{
+        border-top: 9px solid #eeeeee34;
+        background-color: black;
+        height: 100%;
+        padding-bottom: 60px;
+    
+    }
+    
+    .container{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 33px;
+        margin: 0 auto;
+        color: white;
+    }
+    .left{
+        width: 50%;
+    }
+    .right{
+        width: 50%;
+    }
+    
+    
+    .left .tittle{
+        font-size: 3vmax;
+        margin-bottom: 13px;
+    }
+    
+    .left .sub-tittle{
+        font-size: 1.5vmax;
+    }
+    
+    
+    
+    
+    .real-tv{
+        width: 100%;
+        position: relative;
+        margin-bottom: 10%;
+    }
+    
+    .tv1{
+        width: 100%;
+        margin-top: 5%;
+        position: relative;
+    }
+    
+    .video1{
+        position: absolute;
+        width: 73%;
+        left: 13%;
+        top: 25.5%;
+    }
+    
+    
+    .left-content{
+        width: 30%;
+    }
+    
+    .right-content{
+        width: 60%;
+        margin-top: 50px;
+    }
+    .mobile{
+        width: 100%;
+        position: relative;
+        /* border: 1px solid red; */
+    }
+    
+    .image1{
+        width: 100%;
+        position: relative;
+        margin-top: 7%;
+    }
+    
+    .image-upper{
+        width: 60%;
+        height: 20%;
+        position: absolute;
+        bottom: 8%;
+        left: 20%;
+        background-color: black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid white;
+    }
+    
+    .start{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-left: 15px;
+    }
+    
+    .cover-img{
+        width: 15%;
+    }
+    
+    .start-cnt .tittle{
+        font-size: 1.1vmax;
+        font-weight: bold;
+    }
+    
+    .start-cnt .sub-tittle{
+        color: rgb(59, 59, 248);
+        font-size: 15px;
+    }
+    
+    .end{
+        width: 15%;
+        height: 52%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-image: url(./download-icon.gif);
+        background-size: 100%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+    
+    }
+    
+    .left-content{
+        width: 50%;
+    }
+    .right-content{
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    
+    .right-content .tittle{
+        font-size: 3vmax;
+        margin-bottom: 13px;
+    }
+    
+    .right-content .sub-tittle{
+        font-size: 1.5vmax;
+    }
+    
+    .real-tv2{
+        width: 100%;
+        position: relative;
+        margin-top: 6%;
+    }
+    
+    .tv2{
+        width: 100%;
+        margin-top: 5%;
+        position: relative;
+    }
+    
+    .video2{
+        position: absolute;
+        width: 49%;
+        left: 25%;
+        top: 16%;
+        transform: scale(1.3);
+    }
+    
+    .faq{
+        width: 100%;
+        color: white;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .faq-tittle{
+        font-size: 2vmax;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    .faq .tittle{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .faq-flex{
+        width: 70%;
+        padding: 20px 25px;
+        margin: auto;
+        background-color: rgb(46, 45, 45);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        
+    }
+    
+    .faq-ans{
+        width: 70%;
+        margin: auto;
+        margin-top: 1.5px;
+        background-color: rgb(46, 45, 45);
+        font-size: 1.6vmax;
+        padding: 20px 25px;
+        display: none;
+    }
+    
+    .faq-ans-1{
+        margin-bottom: 25px;
+    }
+    
+    .faq-search{
+        margin-top: 30px;
+        color: white;
+        text-align: center;
+        font-size: 1.5vmax;
+    }
+    
+    .faq-search-desc{
+        margin-bottom: 25px;
+    }
+    
+    
+    .footer{
+        color: white;
+    }
+    
+    .footer-flex{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 200px;
+    }
+    
+    .footer-flex ul{
+            list-style-type: none;
+          
+    }
+    
+    .footer-flex ul li{
+        margin-bottom: 15px;
+    }
+    a{
+        color: white;
+    }
+    
+    .footer-tittle{
+        margin-top: 70px;
+        margin-left: 200px;
+    }
+    
+    .footer-btn{
+        margin-left: 200px;
+    }
+    
+    .netflix-india{
+        margin-top: 25px;
+    }
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media (min-width:960px) and (max-width:1279.9px){
+
+    .header{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    
+    }
+    
+    
+    .background-image{
+        width: 100%;
+        transform: scale(1.6);
+    }
+    
+    .tint{
+        width: 100%;
+        background-color: rgba(0, 0, 0 ,0.40);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+    }
+    
+    .navbar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .navbar .logo{
+        width: 20vmax;
+    }
+    
+    .navbar .btn{
+        display: flex;
+        align-items: center;
+        gap: 20px;  
+        
+    }
+    
+    .btn .lng-btn{
+        padding: 5px 20px 5px 10px;
+        background-color: rgba(21, 21, 21, 0.747);
+        color: white;
+        border: 0.5px solid white;
+        border-radius: 4px;
+        font-size: 16px;
+        display: flex;
+    }
+    
+    .lng-btn .lng-btn-icon{
+        margin-right: 8px;
+    }
+    
+    .lng-btn .lng-btn-icon img{
+        transform: translate(1px, 2px);
+    }
+    
+    .lng-btn .lng-btn-type{
+        margin-right: 8px;
+    }
+    
+    .login-btn{
+        padding: 7px 15px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        display: flex;
+        font-weight: bold;
+        margin-right: 25px;
+    }
+    
+    
+    
+    
+    
+    .content{
+        width: 82%;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -48%);
+        text-align: center;
+    }
+    
+    .content .tittle{
+        font-size: 4.5vmax;
+        font-weight:bold;
+        margin-bottom: 20px;
+    }
+    
+    .content .sub-tittle{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .content .desc{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+    .content-flex{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-left: 9%;
+    }
+    
+    .content-input{
+        padding: 16px 200px 16px 10px;
+        margin-right: 10px;
+        background-color: rgba(25, 24, 24, 0.718);
+        border: 0.5px solid white;
+        border-radius: 4px;
+        
+    }
+    
+    .content-input:focus{
+        outline: 2px solid white;
+    }
+    
+    .content-btn{
+        padding: 0 15px 3px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 22px;
+        font-weight: bold;   
+        display: flex;
+        align-items: center; 
+    }
+    
+    .content-btn-icon img{
+        margin-left: 2px;
+        margin-top: 8px;
+    }
+    .section{
+        border-top: 9px solid #eeeeee34;
+        background-color: black;
+        height: 100%;
+        padding-bottom: 60px;
+    
+    }
+    
+    .container{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        gap: 33px;
+        margin: 0 auto;
+        color: white;
+    }
+    .left{
+        width: 50%;
+    }
+    .right{
+        width: 50%;
+    }
+    
+    
+    .left .tittle{
+        font-size: 4.5vmax;
+        margin-bottom: 13px;
+    }
+    
+    .left .sub-tittle{
+        font-size: 2.6vmax;
+    }
+    
+    
+    
+    
+    .real-tv{
+        width: 100%;
+        position: relative;
+        margin-bottom: 10%;
+    }
+    
+    .tv1{
+        width: 100%;
+        margin-top: 5%;
+        position: relative;
+    }
+    
+    .video1{
+        position: absolute;
+        width: 73%;
+        left: 13%;
+        top: 25.5%;
+    }
+    
+    
+    .left-content{
+        width: 50%;
+    }
+    
+    .right-content{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .mobile{
+        width: 100%;
+        position: relative;
+    }
+    
+    .image1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-top: 7%;
+    }
+    
+    .image-upper{
+        width: 60%;
+        height: 25%;
+        position: absolute;
+        bottom: 8%;
+        left: 20%;
+        background-color: black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid white;
+    }
+    
+    .start{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-left: 15px;
+    }
+    
+    .cover-img{
+        width: 15%;
+    }
+    
+    .start-cnt .tittle{
+        font-size: 1.1vmax;
+        font-weight: bold;
+    }
+    
+    .start-cnt .sub-tittle{
+        color: rgb(59, 59, 248);
+        font-size: 15px;
+    }
+    
+    .end{
+        width: 15%;
+        height: 52%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-image: url(./download-icon.gif);
+        background-size: 100%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+    
+    }
+    
+    .left-content{
+        width: 50%;
+    }
+    .right-content{
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    
+    .right-content .tittle{
+        font-size: 4.5vmax;
+        margin-bottom: 13px;
+    }
+    
+    .right-content .sub-tittle{
+        font-size: 2.5vmax;
+    }
+    
+    .real-tv2{
+        width: 100%;
+        position: relative;
+        margin-top: 6%;
+    }
+    
+    .tv2{
+        width: 100%;
+        margin-top: 5%;
+        position: relative;
+    }
+    
+    .video2{
+        position: absolute;
+        width: 49%;
+        left: 25%;
+        top: 16%;
+        transform: scale(1.3);
+    }
+    
+    .faq{
+        width: 100%;
+        color: white;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .faq-tittle{
+        font-size: 3.5vmax;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    .faq .tittle{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .faq-flex{
+        width: 95%;
+        padding: 20px 25px;
+        margin: auto;
+        background-color: rgb(46, 45, 45);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        
+    }
+    
+    .faq-ans{
+        width: 70%;
+        margin: auto;
+        margin-top: 1.5px;
+        background-color: rgb(46, 45, 45);
+        font-size: 1.6vmax;
+        padding: 20px 25px;
+        display: none;
+    }
+    
+    .faq-ans-1{
+        margin-bottom: 25px;
+    }
+    
+    .faq-search{
+        margin-top: 30px;
+        color: white;
+        text-align: center;
+        font-size: 1.5vmax;
+    }
+    
+    .faq-search-desc{
+        margin-bottom: 25px;
+        font-size: 2.2vmax;
+    }
+
+    .faq-last{
+        width: 70%;
+        margin-left: 150px;
+    }
+    
+    
+    .footer{
+        color: white;
+    }
+    
+    .footer-flex{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+    
+    .footer-flex ul{
+            list-style-type: none;
+          
+    }
+    
+    .footer-flex ul li{
+        margin-bottom: 15px;
+    }
+    a{
+        color: white;
+    }
+    
+    .footer-tittle{
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+    
+    .footer-btn{
+        margin-left: 50px;
+    }
+    
+    .netflix-india{
+        margin-top: 25px;
+    }
+
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+@media (min-width:600px) and (max-width:959.9px){
+
+    .header{
+        width: 100vw;
+        height: 80vh;
+        overflow: hidden;
+    
+    }
+    
+    
+    .background-image{
+        width: 100vw;
+        height: 80vh;
+        transform: scale(1.2) translateY(-10px);
+    }
+    
+    .tint{
+        width: 100%;
+        height: 80%;
+        background-color: rgba(0, 0, 0 ,0.40);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+    }
+    
+    .navbar{
+        position: absolute;
+        top: 3%;
+        left: 1%;
+        width: 95%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+    }
+    
+    .navbar .logo{
+        width: 20%;
+        font-size: 12vmax;
+        margin-left: 50px
+    }
+    
+    .navbar .btn{
+        display: flex;
+        align-items: center;
+        gap: 20px;  
+        width: 38%;
+        /* margin-right: 30px; */
+    }
+    
+    .btn .lng-btn{
+        padding: 3px 20px 3px 10px;
+        background-color: rgba(21, 21, 21, 0.747);
+        color: white;
+        border: 0.5px solid white;
+        border-radius: 4px;
+        font-size: 1rem;
+        display: flex;
+    }
+    
+    .lng-btn .lng-btn-icon{
+        margin-right: 8px;
+    }
+    
+    .lng-btn .lng-btn-icon img{
+        transform: translate(1px, 2px);
+    }
+    
+    .lng-btn .lng-btn-type{
+        margin-right: 8px;
+    }
+    
+    .login-btn{
+        padding: 5px 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        display: flex;
+        font-weight: bold;
+    }
+    
+    
+    
+    
+    
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -80%);
+        text-align: center;
+    }
+    
+    .content .tittle{
+        font-size: 4vmax;
+        font-weight:bold;
+        margin-bottom: 20px;
+    }
+    
+    .content .sub-tittle{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .content .desc{
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    
+    .content-flex{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+    }
+    
+    .content-input{
+        padding: 16px 200px 16px 10px;
+        margin-right: 10px;
+        background-color: rgba(25, 24, 24, 0.718);
+        border: 0.5px solid white;
+        border-radius: 4px;
+        /* width: 60%; */
+        
+    }
+    
+    .content-input:focus{
+        outline: 2px solid white;
+    }
+    
+    .content-btn{
+        padding: 6px 10px 10px 20px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-weight: bold;   
+        display: flex;
+        align-items: center; 
+        /* width: 25%; */
+        gap: 10px;
+    }
+    
+    .content-btn-icon img{
+         /* margin-left: 10px;  */
+        margin-top: 8px;
+        /* width: 100%; */
+    }
+    .section{
+        border-top: 9px solid #eeeeee34;
+        background-color: black;
+        height: 100%;
+        padding-bottom: 60px;
+    
+    }
+    
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        margin: 0 auto;
+        color: white;
+    }
+    .left{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .right{
+        width: 90%;
+    }
+    
+    
+    .left .tittle{
+        font-size: 5vmax;
+        margin-bottom: 13px;
+    }
+    
+    .left .sub-tittle{
+        font-size: 2.7vmax;
+    }
+    
+    
+    
+    
+    .real-tv{
+        width: 100%;
+        position: relative;
+        margin-bottom: 10%;
+    }
+    
+    .tv1{
+        width: 100%;
+        margin-top: 5%;
+        position: relative;
+    }
+    
+    .video1{
+        position: absolute;
+        width: 73%;
+        left: 13%;
+        top: 25.5%;
+    }
+    
+    .mobile-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left-content{
+        width: 50%;
+    }
+    
+    .right-content{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .mobile{
+        width: 100%;
+        position: relative;
+    }
+    
+    .image1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-top: 7%;
+    }
+    
+    .image-upper{
+        width: 60%;
+        height: 25%;
+        position: absolute;
+        bottom: 8%;
+        left: 20%;
+        background-color: black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid white;
+    }
+    
+    .start{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-left: 15px;
+    }
+    
+    .cover-img{
+        width: 15%;
+    }
+    
+    .start-cnt .tittle{
+        font-size: 1.1vmax;
+        font-weight: bold;
+    }
+    
+    .start-cnt .sub-tittle{
+        color: rgb(59, 59, 248);
+        font-size: 15px;
+    }
+    
+    .end{
+        width: 15%;
+        height: 52%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-image: url(./download-icon.gif);
+        background-size: 100%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+    
+    }
+    
+    .left-content{
+        width: 100%;
+    }
+    .right-content{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .right-content .tittle{
+        font-size: 6vmax;
+        margin-bottom: 13px;
+    }
+    
+    .right-content .sub-tittle{
+        font-size: 2.7vmax;
+    }
+    
+    .real-tv2{
+        width: 100%;
+        position: relative;
+        margin-top: 6%;
+    }
+    
+    .tv2{
+        width: 100%;
+        margin-top: 5%;
+        position: relative;
+    }
+    
+    .video2{
+        position: absolute;
+        width: 49%;
+        left: 25%;
+        top: 16%;
+        transform: scale(1.3);
+    }
+
+    .kids-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .faq{
+        width: 100%;
+        color: white;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .faq-tittle{
+        font-size: 3.5vmax;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    .faq .tittle{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .faq-flex{
+        width: 95%;
+        padding: 13px 20px;
+        margin: auto;
+        background-color: rgb(46, 45, 45);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        
+    }
+    
+    .faq-ans{
+        width: 70%;
+        margin: auto;
+        margin-top: 1.5px;
+        background-color: rgb(46, 45, 45);
+        font-size: 1.6vmax;
+        padding: 20px 25px;
+        display: none;
+    }
+    
+    .faq-ans-1{
+        margin-bottom: 25px;
+    }
+    
+    .faq-search{
+        margin-top: 30px;
+        color: white;
+        text-align: center;
+        font-size: 1.5vmax;
+    }
+    
+    .faq-search-desc{
+        margin-bottom: 25px;
+        font-size: 2.2vmax;
+    }
+
+    .faq-last{
+        width: 100%;
+        margin-left: 5px;
+    }
+    
+    
+    .footer{
+        color: white;
+    }
+    
+    .footer-flex{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        gap: 20px;
+    }
+    
+    .footer-flex ul{
+            list-style-type: none;
+          
+    }
+    
+    .footer-flex ul li{
+        margin-bottom: 15px;
+    }
+    a{
+        color: white;
+    }
+    
+    .footer-tittle{
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+    
+    .footer-btn{
+        margin-left: 50px;
+    }
+    
+    .netflix-india{
+        margin-top: 25px;
+    }
+
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+@media (min-width:300px) and (max-width:599.9px){
+
+    .header{
+        width: 100vw;
+        height: 80vh;
+        overflow: hidden;
+    
+    }
+    
+    
+    .background-image{
+        width: 100vw;
+        height: 100%;
+        transform: scale(1.2) translateY(-10px);
+    }
+    
+    .tint{
+        width: 100%;
+        height: 80%;
+        background-color: rgba(0, 0, 0 ,0.40);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+    }
+    
+    .navbar{
+        position: absolute;
+        top: 3%;
+        left: 1%;
+        width: 95%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+    }
+    
+    .navbar .logo{
+        width: 25%;
+        font-size: 12vmax;
+        margin-left: 50px
+    }
+    
+    .navbar .btn{
+        display: flex;
+        align-items: center;
+        gap: 20px;  
+        width: 50%;
+        /* margin-right: 30px; */
+    }
+    
+    .btn .lng-btn{
+        padding: 3px 20px 3px 10px;
+        background-color: rgba(21, 21, 21, 0.747);
+        color: white;
+        border: 0.5px solid white;
+        border-radius: 4px;
+        font-size: 1rem;
+        display: flex;
+    }
+    
+    .lng-btn .lng-btn-icon{
+        margin-right: 8px;
+    }
+    
+    .lng-btn .lng-btn-icon img{
+        transform: translate(1px, 2px);
+    }
+    
+    .lng-btn .lng-btn-type{
+        margin-right: 8px;
+        display: none;
+    }
+    
+    .login-btn{
+        padding: 5px 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        display: flex;
+        font-weight: bold;
+    }
+    
+    
+    
+    
+    
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -80%);
+        text-align: center;
+    }
+    
+    .content .tittle{
+        font-size: 4vmax;
+        font-weight:bold;
+        margin-bottom: 20px;
+    }
+    
+    .content .sub-tittle{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .content .desc{
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    
+    .content-flex{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        margin-left: 10%;
+        align-items: center;
+    }
+    
+    .content-input{
+        padding: 16px 200px 16px 10px;
+        /* margin-right: 5px; */
+        background-color: rgba(25, 24, 24, 0.718);
+        border: 0.5px solid white;
+        border-radius: 4px;
+        
+    }
+    
+    .content-input:focus{
+        outline: 2px solid white;
+    }
+    
+    .content-btn{
+        padding: 6px 10px 10px 20px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-weight: bold;   
+        display: flex;
+        align-items: center; 
+        width: 40%;
+        gap: 10px;
+    }
+    
+    .content-btn-icon img{
+         /* margin-left: 10px;  */
+        margin-top: 8px;
+        /* width: 100%; */
+    }
+    .section{
+        border-top: 9px solid #eeeeee34;
+        background-color: black;
+        height: 100%;
+        padding-bottom: 60px;
+    
+    }
+    
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        margin: 0 auto;
+        color: white;
+    }
+    .left{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .right{
+        width: 90%;
+    }
+    
+    
+    .left .tittle{
+        font-size: 5vmax;
+        margin-bottom: 13px;
+    }
+    
+    .left .sub-tittle{
+        font-size: 2.7vmax;
+    }
+    
+    
+    
+    
+    .real-tv{
+        width: 100%;
+        position: relative;
+        margin-bottom: 10%;
+    }
+    
+    .tv1{
+        width: 100%;
+        margin-top: 5%;
+        position: relative;
+    }
+    
+    .video1{
+        position: absolute;
+        width: 73%;
+        left: 13%;
+        top: 25.5%;
+    }
+    
+    .mobile-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left-content{
+        width: 50%;
+    }
+    
+    .right-content{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .mobile{
+        width: 100%;
+        position: relative;
+    }
+    
+    .image1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-top: 7%;
+    }
+    
+    .image-upper{
+        width: 60%;
+        height: 25%;
+        position: absolute;
+        bottom: 8%;
+        left: 20%;
+        background-color: black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid white;
+    }
+    
+    .start{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-left: 15px;
+    }
+    
+    .cover-img{
+        width: 15%;
+    }
+    
+    .start-cnt .tittle{
+        font-size: 1.1vmax;
+        font-weight: bold;
+    }
+    
+    .start-cnt .sub-tittle{
+        color: rgb(59, 59, 248);
+        font-size: 15px;
+    }
+    
+    .end{
+        width: 15%;
+        height: 52%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-image: url(./download-icon.gif);
+        background-size: 100%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+    
+    }
+    
+    .left-content{
+        width: 100%;
+    }
+    .right-content{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .right-content .tittle{
+        font-size: 6vmax;
+        margin-bottom: 13px;
+    }
+    
+    .right-content .sub-tittle{
+        font-size: 2.7vmax;
+    }
+    
+    .real-tv2{
+        width: 100%;
+        position: relative;
+        margin-top: 6%;
+    }
+    
+    .tv2{
+        width: 100%;
+        margin-top: 5%;
+        position: relative;
+    }
+    
+    .video2{
+        position: absolute;
+        width: 49%;
+        left: 25%;
+        top: 16%;
+        transform: scale(1.3);
+    }
+
+    .kids-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .faq{
+        width: 100%;
+        color: white;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .faq-tittle{
+        font-size: 3.5vmax;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    .faq .tittle{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .faq-flex{
+        width: 95%;
+        padding: 13px 20px;
+        margin: auto;
+        background-color: rgb(46, 45, 45);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        
+    }
+    
+    .faq-ans{
+        width: 70%;
+        margin: auto;
+        margin-top: 1.5px;
+        background-color: rgb(46, 45, 45);
+        font-size: 1.6vmax;
+        padding: 20px 25px;
+        display: none;
+    }
+    
+    .faq-ans-1{
+        margin-bottom: 25px;
+    }
+    
+    .faq-search{
+        margin-top: 30px;
+        color: white;
+        text-align: center;
+        font-size: 1.5vmax;
+    }
+    
+    .faq-search-desc{
+        margin-bottom: 25px;
+        font-size: 2.2vmax;
+    }
+
+    .faq-last{
+        width: 100%;
+        margin-left: 5px;
+    }
+    
+    
+    .footer{
+        color: white;
+    }
+    
+    .footer-flex{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        gap: 20px;
+    }
+    
+    .footer-flex ul{
+            list-style-type: none;
+          
+    }
+    
+    .footer-flex ul li{
+        margin-bottom: 15px;
+    }
+    a{
+        color: white;
+    }
+    
+    .footer-tittle{
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+    
+    .footer-btn{
+        margin-left: 50px;
+    }
+    
+    .netflix-india{
+        margin-top: 25px;
+    }
+
+}
