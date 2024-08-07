@@ -1267,8 +1267,8 @@
     
     .tint{
         width: 100%;
-        /* height: %; */
-        background-color: rgba(0, 0, 0 ,0.40);
+        height: 85%;
+        background-color: #00000066;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
         position: absolute;
         top: 0%;
